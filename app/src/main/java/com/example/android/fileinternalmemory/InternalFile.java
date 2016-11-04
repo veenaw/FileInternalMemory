@@ -7,6 +7,7 @@ import android.util.Log;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
@@ -20,6 +21,7 @@ import java.io.PrintWriter;
 public class InternalFile extends Activity {
     private final static String fileName = "TestFile.txt";
     private String TAG = "InternalFileRW";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +52,7 @@ public class InternalFile extends Activity {
             Log.i(TAG, "IOException");
         }
     }
+
     private void writeFile() throws FileNotFoundException {
 
         FileOutputStream fos = openFileOutput(fileName, MODE_PRIVATE);
